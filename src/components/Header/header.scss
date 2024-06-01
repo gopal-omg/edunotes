@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1) 80ms,
+    visibility 0.32s step-end 80ms;
+  backdrop-filter: blur(20px);
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.logo-wrapper h1 {
+  color: #181818;
+  font-size: 28px;
+  font-weight: 600px;
+  span {
+    color: #8808dd;
+  }
+}
+.links-wrapper {
+  display: flex;
+  align-items: center;
+}
+.link {
+  color: #181818;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 250ms ease-in-out;
+  background: #6f20a3;
+}
+.link:last-child {
+  background: #00aa55;
+}
+.link:hover {
+  opacity: 0.5;
+}
